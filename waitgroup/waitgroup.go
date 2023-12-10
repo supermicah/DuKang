@@ -1,4 +1,4 @@
-package waitgroup
+package main
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/supermicah/dionysus/waitgroup"
 )
 
-func Do() {
+func main() {
 	wg := &waitgroup.WaitGroup{}
 	for i := 0; i < 10; i++ {
 		second := time.Duration(i)
